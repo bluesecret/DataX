@@ -7,7 +7,7 @@ import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.transformer.Transformer;
 
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Arrays;
 

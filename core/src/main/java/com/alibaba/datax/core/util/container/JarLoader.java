@@ -2,8 +2,8 @@ package com.alibaba.datax.core.util.container;
 
 import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.core.util.FrameworkErrorCode;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Validate;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -67,8 +67,9 @@ public class JarLoader extends URLClassLoader{
 
         File jarPath = new File(path);
 
-        Validate.isTrue(jarPath.exists() && jarPath.isDirectory(),
-                "jar包路径必须存在且为目录.");
+        if(!jarPath.exists() || !jarPath.isDirectory()){
+            return new ArrayList<URL>();
+        }
 
 		/* set filter */
         FileFilter jarFilter = new FileFilter() {
