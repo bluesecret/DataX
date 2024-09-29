@@ -304,4 +304,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>ruixi-releases</id>
+            <url>http://10.10.11.244:8081/repository/maven-ruixi/</url>
+        </repository>
+        <snapshotRepository>
+            <id>ruixi-snapshots</id>
+            <url>http://10.10.11.244:8081/repository/maven-ruixi/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>

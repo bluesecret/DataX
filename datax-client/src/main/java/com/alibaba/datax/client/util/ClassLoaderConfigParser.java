@@ -2,6 +2,7 @@ package com.alibaba.datax.client.util;
 
 import com.alibaba.datax.common.exception.DataXException;
 import com.alibaba.datax.common.util.Configuration;
+import com.alibaba.datax.core.spi.utils.ClassUtils;
 import com.alibaba.datax.core.util.FrameworkErrorCode;
 import com.alibaba.datax.core.util.SecretUtil;
 import com.alibaba.datax.core.util.container.CoreConstant;

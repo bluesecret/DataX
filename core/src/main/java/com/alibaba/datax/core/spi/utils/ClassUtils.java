@@ -1,6 +1,13 @@
-package com.alibaba.datax.client.util;
+package com.alibaba.datax.core.spi.utils;
 
 public class ClassUtils {
+
+    /**
+     * get class loader
+     *
+     * @param clazz
+     * @return class loader
+     */
     public static ClassLoader getClassLoader(Class<?> clazz) {
         ClassLoader cl = null;
         try {
@@ -23,4 +30,5 @@ public class ClassUtils {
 
         return cl;
     }
+
 }
